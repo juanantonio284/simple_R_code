@@ -7,3 +7,6 @@ R code for everyday tasks
 * `table_explorer.R`: code for basic exploration of large data tables
 
 * `saver`: different options to save R objects to binary files with .rds or .RData extension
+
+* `basic_extraction_tables_from_pdf.R`: code to extract tables from pdf files (very basic, does not
+  cover any sort of fixing of misreads)
