@@ -2,9 +2,8 @@ library(data.table)
 library(tabulapdf)
 
 # setting parameters -------------------------------------------------------------------------------
-path_to_pdf_file <- "~/Downloads/life_tables_temp_sep_11/boletin_cepal_2017.pdf"
-pages_aux <- 45
-
+path_to_pdf_file <- ".../simple_R_code/extract_table_sample_file.pdf"
+pages_aux <- 1
 
 # simple extraction --------------------------------------------------------------------------------
 test <- tabulapdf::extract_tables( file = path_to_pdf_file,  pages = pages_aux )
