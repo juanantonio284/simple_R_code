@@ -10,3 +10,6 @@ R code for everyday tasks
 
 * `extract_tables_from_pdf_1.R`: code to extract tables from pdf files (very basic, does not fix
   misreads)
+
+* `extract_tables_from_pdf_2.R`: code to extract tables from pdf files, fix misreads, and wrangle
+  data
