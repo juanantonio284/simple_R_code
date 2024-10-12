@@ -8,5 +8,5 @@ R code for everyday tasks
 
 * `saver`: different options to save R objects to binary files with .rds or .RData extension
 
-* `basic_extraction_tables_from_pdf.R`: code to extract tables from pdf files (very basic, does not
-  cover any sort of fixing of misreads)
+* `extract_tables_from_pdf_1.R`: code to extract tables from pdf files (very basic, does not fix
+  misreads)
