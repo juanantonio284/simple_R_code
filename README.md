@@ -15,3 +15,14 @@ R code for everyday tasks
   data
   
 * `looper`: an example of using expression parsing to run commands in a loop
+
+## read_the_manual
+
+Although programmers love to say that "everything" is in the documentation and that you need
+to "read the fucking manual"---a sentiment which I very much understand---the official
+documentation is, usually, not that helpful. To be blunt, it's sometimes (often?) the worst place
+to look when you want to learn how to a language works. But there is a value and a beauty to
+official documentation---as opposed to tutorials, guides, courses, etc.---so this folder contains
+summaries/notes of the official documentation for different functions and packages.
+
+* `eval`: evaluate an (Unevaluated) Expression
