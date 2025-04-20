@@ -6,6 +6,8 @@
 # * "deparse"
 # * "gsub" (gsub is a common R function which you should learn separately but I point it out because
 #    in this script there is a nice example of its usage)
+# * "eval"
+# * "parse"
 
 # set reading parameters ---------------------------------------------------------------------------
 years <- c(1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020)

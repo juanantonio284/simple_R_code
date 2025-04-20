@@ -23,9 +23,12 @@ male_coordinates <- list(
 
 # coordinates like the ones above can be obtained with:
 # coordinates <- locate_areas(
-#   file = path_to_pdf_file, pages = pages_aux,
+#   file = path_to_pdf_file, 
+#   pages = pages_aux,
+#   # pages = c(1,1),
 #   resolution = 60L,
-#   widget = c("shiny", "native", "reduced"), copy = FALSE
+#   widget = c("shiny", "native", "reduced"), 
+#   copy = FALSE
 # )
 # to get many sets of coordinates for different areas of the page, add something like pages = c(1,1)
 # In this example, 1 is the page number (repeat the page number for however many areas you have)
