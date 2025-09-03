@@ -1,24 +1,26 @@
 # This reader uses the data.table package's fread instruction which reads faster (maybe), and
 # automatically converts to data.table format.
 
-message( paste0( rep( "-", 100 ), collapse = "" ) )
+# packages and paths should be loaded in dedicated scripts
+# library(data.table)
+# read_dir <- paste0( data_dir, "name_of_specific_folder_with_data" )
+# write_dir <- read_dir # change?
 
-library(data.table)
 
-data_dir <- "~/path/to/general/data/directory/"
-read_dir <- paste0( data_dir, "name_of_specific_folder_with_data" )
-
+# DATASET READER
+message( paste0( rep( '-', 100 ), collapse = '' ) )
+message( "\t", "Reading raw data" )
 
 # 1 Read CSV using fread ---------------------------------------------------------------------------
 message( "\t", "\t", "Reading: ", file_name )
 
 object_name <- "name_of_file_without_extension" # .... (i)
-file_name <- paste0(object_name, ".csv") 
-full_file_path <- paste0( read_dir, file_name )
+file_name <- paste0( object_name, ".csv" ) 
+full_path_to_file <- paste0( read_dir, file_name )
 
 assign( 
   x = object_name,
-  value = data.table::fread(full_file_path) 
+  value = data.table::fread(full_path_to_file) 
 )
 
 # (i) Hopefully your file names are nice (short, clear, no weird characters) and they can be used
@@ -31,11 +33,10 @@ assign(
 #     reason, then write the name of the file directly and don't use the paste0 function, 
 #     e.g.  file_name <- "gdp_unitd ArAb EMIrates_as of 11 22-2010.csv"
 
+
 # save ---------------------------------------------------------------------------------------------
 message( "\t", "Saving" )
 message( "\t", "\t", object_name, ".rds" )
-
-write_dir <- read_dir # change if necessary
 
 # for a single object ............................
 save( INSERT_OBJECT_NAME_HERE_DIRECTLY_WITH_NO_QUOTATION_MARKS, 
@@ -52,4 +53,3 @@ save( INSERT_OBJECT_NAME_HERE_DIRECTLY_WITH_NO_QUOTATION_MARKS,
 # )
 
 message( "\t", "Finished" )
-
